@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="coffeestyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="coffee-beans-script.js"></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Coffee</h1>
+        <h3>Our selection of coffee beans</h3>
+        <div class="filter">
+            <div class="filter-taste">
+                <label for="taste-list" id="taste-list-label" class="taste-list">Filter by taste</label>
+                <select name="taste-list" id="taste-list" onchange="tasteSort()">
+                    <option value="">Select Taste</option>
+                    <option value="sweet">Sweet</option>
+                    <option value="robust">Robust</option>
+                    <option value="strong">Strong</option>
+                    <option value="smooth">Smooth</option>
+                    <option value="acidic">Acidic</option>
+                </select>
+            </div>
+            <div class="filter-sort">
+                <label for="sort-list" id="sort-list-label" class="sort-list">Filter by price</label>
+                <select name="sort-list" id="sort-list" onchange="filterSort()">
+                    <option value="">Sort</option>
+                    <option value="best">Best Selling</option>
+                    <option value="lowest">Lowest Price</option>
+                    <option value="highest">Highest Price</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-item" id="arabica">
+            <p>Arabica</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="robusta">
+            <p>Robusta</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="bourbon">
+            <p>Bourbon</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="catimor">
+            <p>Catimor</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="caturra">
+            <p>Caturra</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="geisha">
+            <p>Geisha</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="harar">
+            <p>Harar Artisan</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="icatu">
+            <p>Icatu</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="jackson">
+            <p>Jackson</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+        <div class="menu-item" id="jamaican">
+            <p>Jamaican Blue</p>
+            <img src="coffee-beans.png" alt="coffee">
+        </div>
+    </div>
+    <!--<menu>
+        <ul>Arabica</ul>
+        <ul>Robusta</ul>
+        <ul>Bourbon</ul>
+        <ul>Catimor</ul>
+        <ul>Caturra</ul>
+        <ul>Geisha</ul>
+        <ul>Harar Artisan</ul>
+        <ul>Icatu</ul>
+        <ul>Jackson</ul>
+        <ul>Jamaican Blue</ul>
+    </menu>-->
+</body>
+</html>
